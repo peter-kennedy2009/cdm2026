@@ -180,5 +180,5 @@ with col7:
         on_click=jogar,
         args=(6,),
         use_container_width=True,
-
+    )
 st.button("Novo jogo", on_click=iniciar_jogo)
