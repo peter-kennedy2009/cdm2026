@@ -149,7 +149,7 @@ with col3_:
 with col4_:
     st.button(
         SIMBOLOS[st.session_state.tabuleiro[3]],
-        key="celula_1",
+        key="celula_3",
         on_click=jogar,
         args=(3,),
         use_container_width=True,
