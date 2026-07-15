@@ -154,25 +154,31 @@ with col4_:
         args=(3,),
         use_container_width=True,
     )
-col3, col4 = st.columns(2)
+col5, col6,col7,col8 = st.columns(4)
 
-with col3:
+with col5:
     st.button(
-        SIMBOLOS[st.session_state.tabuleiro[2]],
-        key="celula_2",
+        SIMBOLOS[st.session_state.tabuleiro[4]],
+        key="celula_4",
         on_click=jogar,
-        args=(2,),
+        args=(4,),
         use_container_width=True,
     )
 
-with col4:
+with col6:
     st.button(
-        SIMBOLOS[st.session_state.tabuleiro[3]],
-        key="celula_3",
+        SIMBOLOS[st.session_state.tabuleiro[5]],
+        key="celula_5",
         on_click=jogar,
-        args=(3,),
+        args=(5,),
         use_container_width=True,
     )
-
+with col7:
+    st.button(
+        SIMBOLOS[st.session_state.tabuleiro[6]],
+        key="celula_6",
+        on_click=jogar,
+        args=(6,),
+        use_container_width=True,
 
 st.button("Novo jogo", on_click=iniciar_jogo)
